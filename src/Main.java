@@ -9,10 +9,8 @@ public class Main {
         int energia = sc.nextInt();
         Traje original = new Traje(modelo, energia);
 
-        // Solo copia la referencia: ambas variables apuntan al MISMO objeto
         Traje alias = original;
 
-        // Constructor de copia: crea un objeto NUEVO e independiente
         Traje copia = new Traje(original);
         System.out.print("Energia a descargar del alias: ");
         int c1 = sc.nextInt();
